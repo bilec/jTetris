@@ -13,10 +13,13 @@ repositories {
 }
 
 val hoplite: String by project
+val koin: String by project
 
 dependencies {
     implementation ("com.sksamuel.hoplite:hoplite-core:$hoplite")
     implementation ("com.sksamuel.hoplite:hoplite-hocon:$hoplite")
+
+    implementation ("io.insert-koin:koin-core:$koin")
 
     testImplementation(kotlin("test"))
 }
